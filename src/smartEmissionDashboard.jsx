@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ChennaiMap from './chennaiMap'; // Ensure filename matches exactly
+import ChennaiMap from './chennaiMap';
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { AlertTriangle, Activity, Wind, Filter, TrendingDown, Droplet, MapPin, Clock } from 'lucide-react';
 
@@ -8,7 +8,6 @@ const SmartEmissionDashboard = () => {
   const [realTimeData, setRealTimeData] = useState([]);
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  // Locations data
   const locations = [
     { id: 'manali', name: 'Manali Industrial Estate', lat: 13.1653, lng: 80.2619, area: 'North Chennai', status: 'operational' },
     { id: 'ennore', name: 'Ennore Thermal Plant', lat: 13.2167, lng: 80.3167, area: 'Ennore', status: 'warning' },
