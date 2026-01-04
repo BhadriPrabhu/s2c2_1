@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ChennaiMap from './ChennaiMap'; // Ensure filename matches exactly
+import ChennaiMap from './chennaiMap'; // Ensure filename matches exactly
 import { LineChart, Line, BarChart, Bar, PieChart, Pie, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { AlertTriangle, Activity, Wind, Filter, TrendingDown, Droplet, MapPin, Clock } from 'lucide-react';
 
