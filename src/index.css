@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+/* We removed the @import url(...) here because we added it to index.html 
+   which is faster and more reliable.
+*/
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  /* FORCE Montserrat on the entire app */
+  font-family: 'Montserrat', sans-serif !important; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb; /* gray-50 to ensure light theme background */
+}
+
+/* Tooltip Styling */
+.leaflet-tooltip {
+  background-color: white !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  color: #1e293b !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600 !important;
+  padding: 8px 12px !important;
+}
+
+.leaflet-tooltip-top:before, 
+.leaflet-tooltip-bottom:before, 
+.leaflet-tooltip-left:before, 
+.leaflet-tooltip-right:before {
+  border: none !important;
+}
